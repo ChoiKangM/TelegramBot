@@ -1,14 +1,15 @@
 from flask import Flask, request
 import requests, random
+from decouple import config
 app = Flask(__name__)
 
 # Telegram
-token = '815705291:AAE8jYAR3hS2A8V6s2XZgbDfOhbru7VwAnA'
+token = config('TELE_TOKEN')
 api_url = f'https://api.telegram.org/bot{token}'
 
 # Naver
-NAVER_CLIENT_ID = 'O75ucAQW4vx4GrJTH_R7'
-NAVER_CLIENT_SECRET = 'ijSXmbKN66'
+NAVER_CLIENT_ID = config('NAVER_CLIENT_ID')
+NAVER_CLIENT_SECRET = config('NAVER_CLIENT_SECRET')
 papago_url = 'https://openapi.naver.com/v1/papago/n2mt'
 
 

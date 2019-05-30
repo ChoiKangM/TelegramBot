@@ -15,12 +15,11 @@ API를 활용해 봇에 메시지 날리기
   2. `flask`
 
 ## 3교시
-대답하는 봇?
-`return body, status_code`  
-`POST`
+챗봇 만들자  
+`return body, status_code`, `POST`  
 
 
-[ngrok](https://ngrok.com/) : 인터넷과 내 로걸 서버를 연결
+[ngrok](https://ngrok.com/) : 인터넷과 내 로걸 서버를 연결  
 
 `ngrok.exe` 파일은 사용자 폴더로 옮겨 실행한다
 
@@ -55,14 +54,22 @@ a is b # FALSE
 -5 ~ 255 # 자주 쓰는 숫자는 메모리에 이미 넣어둠
 ```
 
-[네이버 개발자센터`Papago`](https://developers.naver.com/products/translator/)
+[네이버 개발자센터: `Papago`](https://developers.naver.com/products/translator/)
 
 ## 7교시
 `JSON`에서 번역할 문자열 찾기
-  - `get('message').get('result').get('translatedText')`
+  - `get('message').get('result').get('translatedText')`  
+
+
 `명령어 추가`
   - `text[0:4] == '/번역 '`
 
-[`pythonanywhere`](https://www.pythonanywhere.com/)
+[`python-decouple`](https://github.com/henriquebastos/python-decouple)
+`Key` 관리합니다  
+```bash
+pip install python-decouple
+```
 
+## 8교시
 
+[`pythonanywhere`](https://www.pythonanywhere.com/) 통해 배포
