@@ -32,5 +32,8 @@ win 10에서 ngrok이 잘 안되는 경우
   - `setWebhook`
 
 ## 5교시
-
+`메아리치는 봇`
+`request.args` # GET
+`request.forms` # POST
+`request.get_json()` 
 
